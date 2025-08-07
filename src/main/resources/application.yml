@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: springboot3-java17
+  profiles:
+    active: local
+    group:
+      local:
+        - config
+        - email
+        - server
+      prod:
+        - config-prod
+        - email-prod
+        - server-prod
